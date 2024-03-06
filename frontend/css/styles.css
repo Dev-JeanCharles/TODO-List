@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root {
+    --cor-principal: #52706f;
+    --cor-secundaria: #705050;
+    --cor-terciaria: black;
+    --cor-botao-links: #D4FFFD;
+    --cor-texto-links: #EDFFFE;
+    --cor-rodape:#BD9782;
+    --cor-texto-rodape: rgb(0, 0, 0);
+
+    --fonte-principal: 'Krona One', sans-serif; 
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 3% 0% 3% 5%;
+    background-color: var(--cor-principal);
+}
+
+.cabecalho_nav {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+}
+
+.cabecalho_nav_links {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-texto-links);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 1.9rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_conteudo_paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.botao {
+    margin-top: 25px;
+}
+
+.botao_conteudo {
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-links);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,th {
+    padding: 10px 35px;
+    border: 1px solid #DDD;
+    text-align: center;
+}
+
+td {
+    color: var(--cor-rodape);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+select {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #EBEBEB;
+}
+
+select:hover {
+    background-color: #DDD;
+}
+
+.botao_actions {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botao_actions:nth-child(1) {
+    background-color: orange;
+    margin-right: 5px;
+}
+
+.botao_actions:nth-child(2) {
+    background-color: rgba(237, 42, 42, 0.9);
+    margin-right: 5px;
+}
+
+.formulario_actions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tabela, .formulario_actions {
+    display: none;
+}
+
+#date {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#name {
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.formulario_actions_field {
+    padding-bottom: 30px;
+    width: 100%;
+    flex: 10;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.formulario_actions_labels {
+    padding-bottom: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.fields {
+    padding-bottom: 5%;
+    font-weight: 600;
+}
+
+.formulario_actions_description {
+    padding-bottom: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#msg {
+    padding-bottom: 30px;
+    margin-top: 30px;
+    background-color: #d1d1d1;
+    border-radius: 4px;
+}
+
+.button_form {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_form_submit {
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 80px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#operacoes {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.rodape {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    padding: 30px;
+    text-align: center;
+    color: var(--cor-texto-rodape);
+    background-color: var(--cor-rodape);
+}
